@@ -303,7 +303,7 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [endianness]: https://en.wikipedia.org/wiki/Endianness
 
-[@stdlib/os/byte-order]: https://github.com/stdlib-js/stdlib
+[@stdlib/os/byte-order]: https://github.com/stdlib-js/os-byte-order
 
 </section>
 
