@@ -1,0 +1,44 @@
+{
+  "name": "@stdlib/os-float-word-order",
+  "version": "0.0.0",
+  "description": "Platform float word order.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/os-float-word-order.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utils",
+    "util",
+    "utilities",
+    "utility",
+    "runtime",
+    "environment",
+    "platform",
+    "os",
+    "windows",
+    "darwin",
+    "linux",
+    "mac",
+    "pc",
+    "byte-order",
+    "little-endian",
+    "big-endian",
+    "endian",
+    "endianness",
+    "float",
+    "double"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
