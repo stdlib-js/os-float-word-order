@@ -24,14 +24,30 @@ limitations under the License.
 
 > Platform [float word order][endianness].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/os-float-word-order
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import FLOAT_WORD_ORDER from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-float-word-order@deno/mod.js';
+var FLOAT_WORD_ORDER = require( '@stdlib/os-float-word-order' );
 ```
 
 #### FLOAT_WORD_ORDER
@@ -68,7 +84,7 @@ console.log( FLOAT_WORD_ORDER );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import FLOAT_WORD_ORDER from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-float-word-order@deno/mod.js';
+var FLOAT_WORD_ORDER = require( '@stdlib/os-float-word-order' );
 
 if ( FLOAT_WORD_ORDER === 'little-endian' ) {
     console.log( 'Least significant word comes first...' );
@@ -85,9 +101,150 @@ if ( FLOAT_WORD_ORDER === 'little-endian' ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
 
+## C APIs
 
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/os/float_word_order.h"
+```
+
+#### STDLIB_OS_FLOAT_WORD_ORDER
+
+Macro which equals either `__FLOAT_WORD_ORDER__` (host defined) or [`STDLIB_OS_BYTE_ORDER`][@stdlib/os/byte-order].
+
+```c
+#include "stdlib/os/byte_order.h"
+
+#if defined(STDLIB_OS_FLOAT_WORD_ORDER)
+
+#if STDLIB_OS_FLOAT_WORD_ORDER == STDLIB_OS_ORDER_LITTLE_ENDIAN
+
+// Do something for little-endian...
+
+#elif STDLIB_OS_FLOAT_WORD_ORDER == STDLIB_OS_ORDER_BIG_ENDIAN
+
+// Do something for big-endian...
+
+#endif
+
+#endif
+```
+
+If compiled on an unrecognized/unsupported platform, the macro is **not** defined.
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/os/float_word_order.h"
+#include "stdlib/os/byte_order.h"
+#include <stdio.h>
+
+int main() {
+#if defined(STDLIB_OS_FLOAT_WORD_ORDER)
+#if STDLIB_OS_FLOAT_WORD_ORDER == STDLIB_OS_ORDER_LITTLE_ENDIAN
+    printf( "Least significant word comes first...\n" );
+#elif STDLIB_OS_FLOAT_WORD_ORDER == STDLIB_OS_ORDER_BIG_ENDIAN
+    printf( "Most significant word comes first...\n" );
+#else
+    printf( "Platform float word order is unknown...\n" )
+#endif
+#endif
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
+
+* * *
+
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use the module as a general utility, install the module globally
+
+```bash
+npm install -g @stdlib/os-float-word-order
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: float-word-order [options]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ float-word-order
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -112,7 +269,7 @@ if ( FLOAT_WORD_ORDER === 'little-endian' ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -129,7 +286,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -176,7 +333,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/os/byte-order]: https://github.com/stdlib-js/os-byte-order/tree/deno
+[@stdlib/os/byte-order]: https://github.com/stdlib-js/os-byte-order
 
 <!-- </related-links> -->
 
