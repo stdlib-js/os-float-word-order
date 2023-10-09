@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/os-float-word-order",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Platform float word order.",
   "license": "Apache-2.0",
   "author": {
@@ -41,7 +41,7 @@
   "dependencies": {
     "@stdlib/cli-ctor": "^0.1.1",
     "@stdlib/fs-read-file": "^0.1.1",
-    "@stdlib/os-byte-order": "^0.1.0",
+    "@stdlib/os-byte-order": "^0.1.1",
     "@stdlib/utils-library-manifest": "^0.1.1"
   },
   "devDependencies": {
