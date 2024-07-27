@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import FLOAT_WORD_ORDER from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-float-word-order@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/os-float-word-order/tags). For example,
+
+```javascript
 import FLOAT_WORD_ORDER from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-float-word-order@v0.2.2-deno/mod.js';
 ```
 
@@ -79,7 +84,7 @@ console.log( FLOAT_WORD_ORDER );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import FLOAT_WORD_ORDER from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-float-word-order@v0.2.2-deno/mod.js';
+import FLOAT_WORD_ORDER from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-float-word-order@deno/mod.js';
 
 if ( FLOAT_WORD_ORDER === 'little-endian' ) {
     console.log( 'Least significant word comes first...' );
