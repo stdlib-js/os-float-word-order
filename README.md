@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import FLOAT_WORD_ORDER from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-float-word-order@esm/index.mjs';
+import FLOAT_WORD_ORDER from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-float-word-order@v0.2.2-esm/index.mjs';
 ```
 
 #### FLOAT_WORD_ORDER
@@ -84,7 +84,7 @@ console.log( FLOAT_WORD_ORDER );
 <body>
 <script type="module">
 
-import FLOAT_WORD_ORDER from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-float-word-order@esm/index.mjs';
+import FLOAT_WORD_ORDER from 'https://cdn.jsdelivr.net/gh/stdlib-js/os-float-word-order@v0.2.2-esm/index.mjs';
 
 if ( FLOAT_WORD_ORDER === 'little-endian' ) {
     console.log( 'Least significant word comes first...' );
