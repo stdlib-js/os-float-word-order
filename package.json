@@ -41,7 +41,7 @@
   "dependencies": {
     "@stdlib/cli-ctor": "^0.2.2",
     "@stdlib/fs-read-file": "^0.2.2",
-    "@stdlib/os-byte-order": "^0.2.1",
+    "@stdlib/os-byte-order": "^0.2.2",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
